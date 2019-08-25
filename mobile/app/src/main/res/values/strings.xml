@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VoiceBot</string>
+    <string name="welcome_message">Welcome! Tap the mic to start recording.</string>
+    <string name="on_record">Recording …</string>
+    <string name="process_speech">Processing …</string>
+    <string name="record_button_description">Speech recording button</string>
+    <string name="cancel_transfer">X</string>
+</resources>

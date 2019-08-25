@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F1F1F</color>
+    <color name="colorPrimaryDark">#0A0A0A</color>
+    <color name="colorAccent">#125497</color>
+    <color name="defaultText">#BEBEBE</color>
+    <color name="errorText">#A00B0B</color>
+    <color name="hintText">#838383</color>
+    <color name="windowBackground">#1F1F1F</color>
+    <color name="cancelTransferDisabled">#9E5959</color>
+    <color name="cancelTransferEnabled">#971A1A</color>
+</resources>
