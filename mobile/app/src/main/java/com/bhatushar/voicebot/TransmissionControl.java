@@ -1,10 +1,14 @@
 package com.bhatushar.voicebot;
 
-import android.os.AsyncTask;
+import android.content.Context;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ProgressBar;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -15,6 +19,8 @@ import java.util.Set;
 class TransmissionControl {
     private static final String LOG_TAG = "TransmissionControl";
 
+    private static final String URL = "http://192.168.43.88:80/";
+
     /**
      * Contains the final data to be transmitted
      * First index contains the code, second index contains the magnitude (if any).
@@ -22,9 +28,9 @@ class TransmissionControl {
     private int[] data = new int[2];
 
     // Dictionaries
-    static final Hashtable<String, Integer> codeDictionary = new Hashtable<>(10);
-    static final Set<Integer> validCodes = new HashSet<>(6);;
-    static final Hashtable<String, Integer> digits = new Hashtable<>(9);
+    private static final Hashtable<String, Integer> codeDictionary = new Hashtable<>(10);
+    private static final Set<Integer> validCodes = new HashSet<>(6);;
+    private static final Hashtable<String, Integer> digits = new Hashtable<>(9);
 
     /**
      * Method initializes all static dictionaries.
@@ -157,9 +163,29 @@ class TransmissionControl {
         return parsed;
     }
 
-    void transmit() {
-        // Send data to bot
-        Log.d(LOG_TAG, "Transmission complete.");
+    void transmit(Context context) {
+        String params = "?code=" + data[0] + "&value=" + data[1];
+        // Instantiate the RequestQueue.
+        RequestQueue queue = Volley.newRequestQueue(context);
+
+        // Request a string response from the provided URL.
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, URL+params,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        // Log the response from the bot
+                        Log.d(LOG_TAG, response);
+                        Log.d(LOG_TAG, "Transmission complete.");
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(LOG_TAG, "Reponse error: "+error.getMessage());
+                error.printStackTrace();
+            }
+        });
+        // Add the request to the RequestQueue.
+        queue.add(stringRequest);
     }
 }
 

@@ -21,10 +21,11 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 
+import java.lang.ref.WeakReference;
+
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = "MainActivity";
     private SpeechConversionControl scControl;
-    private TransmissionControl tControl;
 
     private EditText displayText;
     private ImageButton recordButton;
@@ -32,10 +33,6 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar progressBar;
 
     Vibrator vibrator;
-
-    // Recording permissions
-    final int REQUEST_RECORD_AUDIO_PERMISSION = 200;
-    String [] permissions = {Manifest.permission.RECORD_AUDIO};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,10 +45,14 @@ public class MainActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
 
         // Generating transmission data dictionaries
-        tControl = new TransmissionControl();
         TransmissionControl.initDataDictionary();
 
-         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        // Setting up speech recorder
+        scControl = new SpeechConversionControl(this);
+        if(!scControl.isActive())
+            recordButton.setEnabled(false);
+
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
         findViewById(R.id.recordButton).setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -65,18 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 } else return false;
             }
         });
-
-        // Requesting permission for audio recording
-        ActivityCompat.requestPermissions(this, permissions, REQUEST_RECORD_AUDIO_PERMISSION);
-        // Check if speech recognition is available on the device
-        if (!SpeechRecognizer.isRecognitionAvailable(this)) {
-            Log.e(LOG_TAG, "No voice recognition support on your device!");
-            // Disable recording button
-            recordButton.setEnabled(false);
-        } else {
-            Log.d(LOG_TAG, "Speech to text supported on device.");
-            scControl = new SpeechConversionControl(this);
-        }
     }
 
     // Sets recording permissions
@@ -84,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         boolean recordingPermission = false;
-        if (requestCode == REQUEST_RECORD_AUDIO_PERMISSION)
+        if (requestCode == 200)
             recordingPermission  = (grantResults[0] == PackageManager.PERMISSION_GRANTED);
         if (!recordingPermission ) finish();
     }
@@ -109,75 +98,15 @@ public class MainActivity extends AppCompatActivity {
     // Called by SpeechConversionControl once the audio is processed
     public void processResult(String command) {
         displayText.setText(command);
-        if (tControl.parseCommand(command)) {
+        TransmissionControl transmitter = new TransmissionControl();
+        if (transmitter.parseCommand(command)) {
             displayText.setTextColor(ContextCompat.getColor(this, R.color.defaultText));
             // Create async task
-            AsyncTransfer task = new AsyncTransfer();
+            AsyncTransfer task = new AsyncTransfer(this, transmitter);
             task.execute();
         } else {
             displayText.setTextColor(ContextCompat.getColor(this, R.color.errorText));
         }
     }
 
-    // Vibrates phone for 50 ms
-    private void vibrate() {
-    }
-
-    class AsyncTransfer extends AsyncTask<Void, Void, Boolean> {
-        private static final String LOG_TAG = "AsyncTransfer";
-        private ProgressBarAnimation progressBarAnimation;
-
-        AsyncTransfer() {
-            cancelTransfer.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    AsyncTransfer.super.cancel(true);
-                }
-            });
-            progressBarAnimation = new ProgressBarAnimation(progressBar, 0, 100);
-        }
-
-        @Override
-        protected void onPreExecute() {
-            cancelTransfer.setEnabled(true);
-            cancelTransfer.setBackgroundResource(R.drawable.cancel_transfer_enabled);
-            progressBar.setMax(100);
-        }
-
-        @Override
-        protected Boolean doInBackground(Void... voids) {
-            try {
-                progressBarAnimation.setDuration(3000);
-                publishProgress();
-                Thread.sleep(2500);
-                return true;
-            } catch (InterruptedException e) {
-                Log.d(LOG_TAG, "Wait time interrupted.");
-                return false;
-            }
-        }
-
-        @Override
-        protected void onProgressUpdate(Void... voids) {
-            progressBar.startAnimation(progressBarAnimation);
-        }
-
-        @Override
-        protected void onPostExecute(Boolean transfer) {
-            cancelTransfer.setEnabled(false);
-            cancelTransfer.setBackgroundResource(R.drawable.cancel_transfer_disabled);
-            progressBar.setMax(0);
-            if (transfer) {
-                Log.d(LOG_TAG, "Transferring data.");
-                tControl.transmit();
-            } else {
-                Log.d(LOG_TAG, "Transfer cancelled.");
-            }
-        }
-
-        @Override
-        protected void onCancelled() {
-            onPostExecute(false);
-        }
-    }
 }
