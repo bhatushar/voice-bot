@@ -1,0 +1,9 @@
+set(TRANSMISSION_CONTROL lib/TransmissionControl/TransmissionControl.h lib/TransmissionControl/TransmissionControl.cpp)
+set(MOTOR_DRIVER lib/MotorDriver/MotorDriver.h lib/MotorDriver/MotorDriver.h)
+set(INCLUDE_DIR
+        lib/TransmissionControl
+        lib/MotorDriver)
+
+set(SRC_LIST
+    ${TRANSMISSION_CONTROL}
+    ${MOTOR_DRIVER})

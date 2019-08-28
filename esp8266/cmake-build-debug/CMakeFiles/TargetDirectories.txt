@@ -1,0 +1,13 @@
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOADFS.dir
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD.dir
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/PLATFORMIO_CLEAN.dir
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOAD.dir
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/PLATFORMIO_MONITOR.dir
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/PLATFORMIO_TEST.dir
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/PLATFORMIO_PROGRAM.dir
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/PLATFORMIO_UPDATE_ALL.dir
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/bot.dir
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/rebuild_cache.dir

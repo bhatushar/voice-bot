@@ -1,4 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2019.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\Projects\voice-bot\bot
--- Configuring done
--- Generating done
--- Build files have been written to: E:/Projects/voice-bot/bot/cmake-build-debug
