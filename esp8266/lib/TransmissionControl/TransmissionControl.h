@@ -7,9 +7,19 @@
 #ifndef BOT_TRANSMISSION_CONTROL_H
 #define BOT_TRANSMISSION_CONTROL_H
 
-#include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
+
+
+/**
+ * Macros assigned to each transmission code
+ */
+#define MOVE_FORWARD_STEPS 174
+#define MOVE_BACKWARD_STEPS 290
+#define TURN_LEFT_STEPS 2233
+#define TURN_RIGHT_STEPS 2639
+#define SET_SPEED 323
+#define STOP 23
 
 /**
  * This is used to handle all incoming requests form clients.
@@ -33,14 +43,6 @@ extern int receivedData[];
  * @param password Network password
  */
 void connect(const char*, const char*);
-
-/**
- * Handler for server requests.
- * It is invoked every time the server receives a request.
- * It extracts the required parameters and populates receivedData with it.
- * Request is of the form http://192.168.43.88:80/?code=XXX&value=XXX
- */
-void argsHandler();
 
 /**
  * Resets the value of receivedData to 0.

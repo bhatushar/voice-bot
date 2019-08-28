@@ -1,5 +1,7 @@
 #include "TransmissionControl.h"
 
+
+
 // Defining the extern variables
 ESP8266WebServer server(80); // port 80
 int receivedData[2];
@@ -27,6 +29,12 @@ int parseInt(String s) {
     return num;
 }
 
+/**
+ * Handler for server requests.
+ * It is invoked every time the server receives a request.
+ * It extracts the required parameters and populates receivedData with it.
+ * Request is of the form http://192.168.43.88:80/?code=XXX&value=XXX
+ */
 void argsHandler() {
     // Store data
     receivedData[0] = parseInt(server.arg("code"));
@@ -38,7 +46,7 @@ void argsHandler() {
 
 void connect(const char *ssid, const char *password) {
     // Configuration settings
-    IPAddress localIP(192, 168, 43, 88), 
+    IPAddress localIP(192, 168, 43, 88),
             gateway(192, 168, 43, 1),
             subnet(255, 255, 255, 0);
     WiFi.config(localIP, gateway, subnet);
@@ -50,7 +58,7 @@ void connect(const char *ssid, const char *password) {
     }
     Serial.print("\nConnected to: ");
     Serial.println(WiFi.localIP()); // used by client to send requests
-    
+
     // Every request ending in / (eg. http://192.168.43.88:80/) is handled by argsHandler function
     server.on("/", argsHandler);
     // Start server
