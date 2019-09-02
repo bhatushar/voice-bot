@@ -266,6 +266,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/Projects/voice-bot/esp8266/lib/MotorDriver/MotorDriver.cpp">
+			<Option target="bot"/>
+		</Unit>
 		<Unit filename="E:/Projects/voice-bot/esp8266/lib/MotorDriver/MotorDriver.h">
 			<Option target="bot"/>
 		</Unit>

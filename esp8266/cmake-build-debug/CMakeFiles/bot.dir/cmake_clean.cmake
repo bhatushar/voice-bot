@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/bot.dir/lib/TransmissionControl/TransmissionControl.cpp.obj"
   "CMakeFiles/bot.dir/src/main.cpp.obj"
+  "CMakeFiles/bot.dir/lib/MotorDriver/MotorDriver.cpp.obj"
   "bot.pdb"
   "bot.exe"
   "bot.exe.manifest"

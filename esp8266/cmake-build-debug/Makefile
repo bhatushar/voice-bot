@@ -252,6 +252,33 @@ bot/fast:
 	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/build
 .PHONY : bot/fast
 
+lib/MotorDriver/MotorDriver.obj: lib/MotorDriver/MotorDriver.cpp.obj
+
+.PHONY : lib/MotorDriver/MotorDriver.obj
+
+# target to build an object file
+lib/MotorDriver/MotorDriver.cpp.obj:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/lib/MotorDriver/MotorDriver.cpp.obj
+.PHONY : lib/MotorDriver/MotorDriver.cpp.obj
+
+lib/MotorDriver/MotorDriver.i: lib/MotorDriver/MotorDriver.cpp.i
+
+.PHONY : lib/MotorDriver/MotorDriver.i
+
+# target to preprocess a source file
+lib/MotorDriver/MotorDriver.cpp.i:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/lib/MotorDriver/MotorDriver.cpp.i
+.PHONY : lib/MotorDriver/MotorDriver.cpp.i
+
+lib/MotorDriver/MotorDriver.s: lib/MotorDriver/MotorDriver.cpp.s
+
+.PHONY : lib/MotorDriver/MotorDriver.s
+
+# target to generate assembly for a file
+lib/MotorDriver/MotorDriver.cpp.s:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/lib/MotorDriver/MotorDriver.cpp.s
+.PHONY : lib/MotorDriver/MotorDriver.cpp.s
+
 lib/TransmissionControl/TransmissionControl.obj: lib/TransmissionControl/TransmissionControl.cpp.obj
 
 .PHONY : lib/TransmissionControl/TransmissionControl.obj
@@ -325,6 +352,9 @@ help:
 	@echo ... bot
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... lib/MotorDriver/MotorDriver.obj
+	@echo ... lib/MotorDriver/MotorDriver.i
+	@echo ... lib/MotorDriver/MotorDriver.s
 	@echo ... lib/TransmissionControl/TransmissionControl.obj
 	@echo ... lib/TransmissionControl/TransmissionControl.i
 	@echo ... lib/TransmissionControl/TransmissionControl.s

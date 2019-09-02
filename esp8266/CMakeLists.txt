@@ -74,5 +74,5 @@ add_custom_target(
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-add_executable(${PROJECT_NAME} ${SRC_LIST} src/main.cpp)
+add_executable(${PROJECT_NAME} ${SRC_LIST} src/main.cpp lib/MotorDriver/MotorDriver.cpp lib/MotorDriver/MotorDriver.h)
 target_include_directories(${PROJECT_NAME} PRIVATE ${INCLUDE_DIR})

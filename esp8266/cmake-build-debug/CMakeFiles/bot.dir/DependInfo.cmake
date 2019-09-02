@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "E:/Projects/voice-bot/esp8266/lib/MotorDriver/MotorDriver.cpp" "E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/bot.dir/lib/MotorDriver/MotorDriver.cpp.obj"
   "E:/Projects/voice-bot/esp8266/lib/TransmissionControl/TransmissionControl.cpp" "E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/bot.dir/lib/TransmissionControl/TransmissionControl.cpp.obj"
   "E:/Projects/voice-bot/esp8266/src/main.cpp" "E:/Projects/voice-bot/esp8266/cmake-build-debug/CMakeFiles/bot.dir/src/main.cpp.obj"
   )

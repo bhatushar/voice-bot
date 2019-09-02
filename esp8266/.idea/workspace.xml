@@ -2,19 +2,19 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="bot" targetName="DEBUG" />
-      <config projectName="bot" targetName="PLATFORMIO_TEST" />
-      <config projectName="bot" targetName="PLATFORMIO_UPDATE_ALL" />
-      <config projectName="bot" targetName="PLATFORMIO_PROGRAM" />
       <config projectName="bot" targetName="PLATFORMIO_BUILD_VERBOSE" />
+      <config projectName="bot" targetName="PLATFORMIO_MONITOR" />
       <config projectName="bot" targetName="bot" />
+      <config projectName="bot" targetName="PLATFORMIO_BUILD" />
+      <config projectName="bot" targetName="PLATFORMIO_UPLOADFS" />
       <config projectName="bot" targetName="PLATFORMIO" />
+      <config projectName="bot" targetName="PLATFORMIO_REBUILD_PROJECT_INDEX" />
+      <config projectName="bot" targetName="PLATFORMIO_TEST" />
+      <config projectName="bot" targetName="PLATFORMIO_PROGRAM" />
+      <config projectName="bot" targetName="DEBUG" />
+      <config projectName="bot" targetName="PLATFORMIO_UPDATE_ALL" />
       <config projectName="bot" targetName="PLATFORMIO_UPLOAD" />
       <config projectName="bot" targetName="PLATFORMIO_CLEAN" />
-      <config projectName="bot" targetName="PLATFORMIO_MONITOR" />
-      <config projectName="bot" targetName="PLATFORMIO_REBUILD_PROJECT_INDEX" />
-      <config projectName="bot" targetName="PLATFORMIO_UPLOADFS" />
-      <config projectName="bot" targetName="PLATFORMIO_BUILD" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -24,182 +24,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec922180-b3d3-40f1-af0b-2568113a9075" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/CMakeListsUser.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/.idea/clion.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/.idea/platformio.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/.idea/serialmonitor_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/3.14.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/3.14.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/3.14.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/3.14.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/3.14.3/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/3.14.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/MotorDriver.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/MotorDriver.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/MotorDriver.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/MotorDriver.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/MotorDriver.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/MotorDriver.dir/includes_CXX.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/MotorDriver.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/MotorDriver.dir/linklibs.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/MotorDriver.dir/objects1.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/MotorDriver.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_CLEAN.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_CLEAN.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_CLEAN.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_CLEAN.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_MONITOR.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_MONITOR.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_MONITOR.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_MONITOR.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_PROGRAM.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_PROGRAM.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_PROGRAM.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_PROGRAM.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_TEST.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_TEST.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_TEST.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_TEST.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOAD.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOAD.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOAD.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOAD.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOAD.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOAD.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOADFS.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOADFS.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOADFS.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOADFS.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/includes_CXX.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/linklibs.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/objects1.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/bot.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/include/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/lib/MotorDriver/MotorDriver.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/lib/MotorDriver/MotorDriver.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/lib/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/lib/TransmissionControl/TransmissionControl.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/lib/TransmissionControl/TransmissionControl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/platformio.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/src/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/test/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/androidTest/java/com/bhatushar/voicebot/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/ic_record_on-web.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/ic_record_start-web.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/ic_record_stop-web.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/java/com/bhatushar/voicebot/AsyncTransfer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/java/com/bhatushar/voicebot/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/java/com/bhatushar/voicebot/ProgressBarAnimation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/java/com/bhatushar/voicebot/SpeechConversionControl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/java/com/bhatushar/voicebot/TransmissionControl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/drawable/cancel_transfer_disabled.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/drawable/cancel_transfer_enabled.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-hdpi/ic_record_on_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-hdpi/ic_record_start_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-mdpi/ic_record_on_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-mdpi/ic_record_start_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-xhdpi/ic_record_on_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-xhdpi/ic_record_start_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-xxhdpi/ic_record_on_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-xxhdpi/ic_record_start_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-xxxhdpi/ic_record_on_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/mipmap-xxxhdpi/ic_record_start_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/values/ic_record_on_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/values/ic_record_start_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/xml/netword_security_config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/test/java/com/bhatushar/voicebot/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/bot.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bot.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/bot.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="platformio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -239,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="264">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -249,22 +85,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/TransmissionControl/TransmissionControl.cpp">
+        <entry file="file://$PROJECT_DIR$/lib/MotorDriver/MotorDriver.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
-              <folding>
-                <element signature="e#127#582#0" />
-              </folding>
+            <state relative-caret-position="912">
+              <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/TransmissionControl/TransmissionControl.h">
+        <entry file="file://$PROJECT_DIR$/lib/MotorDriver/MotorDriver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="44" column="3" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
+            <state relative-caret-position="4224">
+              <caret line="177" column="82" selection-start-line="177" selection-start-column="82" selection-end-line="177" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -277,22 +110,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/MotorDriver/MotorDriver.h" />
         <option value="$PROJECT_DIR$/CMakeListsUser.txt" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
-        <option value="$PROJECT_DIR$/lib/MotorDriver/MotorDriver.cpp" />
         <option value="$PROJECT_DIR$/lib/TransmissionControl/TransmissionControl.cpp" />
         <option value="$PROJECT_DIR$/lib/TransmissionControl/TransmissionControl.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/lib/MotorDriver/MotorDriver.h" />
+        <option value="$PROJECT_DIR$/lib/MotorDriver/MotorDriver.cpp" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/dictionaries/tbhat.xml" />
-      </list>
-    </option>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-bot" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="81" />
@@ -363,6 +192,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -489,33 +319,39 @@
       <workItem from="1566820002157" duration="1516000" />
       <workItem from="1566826880273" duration="10071000" />
       <workItem from="1566895962939" duration="17531000" />
-      <workItem from="1566996520072" duration="9852000" />
+      <workItem from="1566996520072" duration="10401000" />
+      <workItem from="1567008298678" duration="5133000" />
+      <workItem from="1567161813030" duration="1114000" />
+      <workItem from="1567241502456" duration="7510000" />
+      <workItem from="1567261751773" duration="204000" />
+      <workItem from="1567262050802" duration="3240000" />
+      <workItem from="1567417182904" duration="1439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38970000" />
+    <option name="totallyTimeSpent" value="58159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" order="0" visible="true" weight="0.18656716" />
+      <window_info id="Project" order="0" visible="true" weight="0.19936034" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" />
-      <window_info anchor="bottom" id="Find" weight="0.3293348" />
-      <window_info anchor="bottom" id="Debug" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3293348" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="CMake" order="3" weight="0.3293348" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" weight="0.3293348" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.3293348" />
       <window_info anchor="bottom" id="Serial Monitor" order="6" weight="0.3293348" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3293348" />
-      <window_info anchor="right" id="Database" order="0" sideWeight="0.499187" weight="0.32995737" />
-      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="1" sideWeight="0.500813" side_tool="true" visible="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.3293348" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Debug" order="9" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.3293348" />
+      <window_info anchor="right" id="Database" order="0" sideWeight="0.49836424" weight="0.32995737" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="1" sideWeight="0.5016358" side_tool="true" weight="0.32995737" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,13 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/MotorDriver/MotorDriver.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.platformio/packages/framework-arduinoespressif8266/cores/esp8266/Arduino.h">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -557,24 +386,10 @@
     <entry file="file://$PROJECT_DIR$/CMakeListsPrivate.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeListsUser.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.platformio/packages/framework-arduinoespressif8266/cores/esp8266/Esp.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="580" column="8" selection-start-line="580" selection-start-column="8" selection-end-line="580" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
@@ -585,37 +400,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/TransmissionControl/TransmissionControl.h">
+    <entry file="file://$PROJECT_DIR$/CMakeListsUser.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="44" column="3" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
+        <state relative-caret-position="192">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/MotorDriver/MotorDriver.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="433">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/TransmissionControl/TransmissionControl.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/TransmissionControl/TransmissionControl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="264">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/TransmissionControl/TransmissionControl.cpp">
+    <entry file="file://$PROJECT_DIR$/lib/MotorDriver/MotorDriver.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
-          <folding>
-            <element signature="e#127#582#0" />
-          </folding>
+        <state relative-caret-position="4224">
+          <caret line="177" column="82" selection-start-line="177" selection-start-column="82" selection-end-line="177" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/MotorDriver/MotorDriver.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
         </state>
       </provider>
     </entry>
