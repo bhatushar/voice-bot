@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             recordButton.setEnabled(false);
 
         // Generating data tables required for converting command to transmission code
-        TransmissionControl.initDataTables();
+        TransmissionControl.initRules();
         // Initializing vibrator (duh)
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
