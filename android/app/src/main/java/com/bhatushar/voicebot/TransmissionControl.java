@@ -23,7 +23,7 @@ import java.util.regex.Pattern;
  * |----forward
  * |    |----step              22
  * |    |----cm                26
- * |    |----inch              17
+ * |    |----inch              34
  * |----backward
  *      |----step              33
  *      |----cm                39
