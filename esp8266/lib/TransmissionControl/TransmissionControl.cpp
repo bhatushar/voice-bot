@@ -1,10 +1,8 @@
 #include "TransmissionControl.h"
 
-
-
 // Defining the extern variables
 ESP8266WebServer server(80); // port 80
-int receivedData[2];
+int request[2];
 
 /**
  * Accepts a numerical string and returns an equivalent integer.
@@ -14,12 +12,12 @@ int receivedData[2];
  * @param s Numerical string
  * @return Integer equivalent of string
  */
-int parseInt(String s) {
+int parseInt(const String& s) {
     int num = 0;
-    for (unsigned int i = 0; i < s.length(); i++) {
-        if ('0' <= s[i] && s[i] <= '9')
-            // s[i] is a digit
-            num = num * 10 + s[i] - 48;
+    for (char i : s) {
+        if ('0' <= i && i <= '9')
+            // i is a digit
+            num = num * 10 + i - 48;
         else { num = 0; break; }
         if (num < 0) {
             // Integer overflow
@@ -37,10 +35,20 @@ int parseInt(String s) {
  */
 void argsHandler() {
     // Store data
-    receivedData[0] = parseInt(server.arg("code"));
-    receivedData[1] = parseInt(server.arg("value"));
+    request[0] = parseInt(server.arg("code"));
+    request[1] = parseInt(server.arg("value"));
     // Respond back to client
-    String msg = "Connected";
+    String msg;
+    if (!request[0])
+        // No parameter passed.
+        msg = "Connected";
+    else {
+        // Code passed in request
+        msg = "Received: CODE";
+        if (request[1])
+            // Code and value passed.
+            msg += ", VALUE";
+    }
     server.send(200, "text/plain", msg);
 }
 
@@ -66,6 +74,6 @@ void connect(const char *ssid, const char *password) {
 }
 
 void clearData() {
-    receivedData[0] = 0;
-    receivedData[1] = 0;
+    request[0] = 0;
+    request[1] = 0;
 }
