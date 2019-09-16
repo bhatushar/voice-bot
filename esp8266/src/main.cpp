@@ -58,11 +58,12 @@ void decode() {
 void setup() {
     Serial.begin(115200);
     // Connect to the network
-    const char *ssid = "Zenfone M1", *password = "2030bf7cfed1";
+    const char *ssid = "****", *password = "****";
     connect(ssid, password);
     // Set motor and encoder pins
-    int motors[4];
-    setMotors(motors, 0);
+    int motors[] = {0, 0, 0, 0},
+        encoderPin = 0;
+    setMotors(motors, encoderPin);
 }
 
 void loop() {
