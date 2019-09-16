@@ -15,15 +15,15 @@
 /**
  * Calculates the length of the arc formed when angle is in degrees.
  * Formula: (2*PI*R/360)*theta
- * R, radius of bot: 0cm
+ * R, radius of bot: 15cm
  */
-#define ARC_LENGTH_DEG(theta) 0*theta
+#define ARC_LENGTH_DEG(theta) 0.2618*theta
 /**
  * Calculates the length of the arc formed when angle is in radians.
  * Formula: R*theta
- * R, radius of bot: 0cm
+ * R, radius of bot: 15cm
  */
-#define ARC_LENGTH_RAD(theta) 0*theta
+#define ARC_LENGTH_RAD(theta) 15*theta
 
 /**
  * The voltage which is applied to the motors to move them.
@@ -56,7 +56,7 @@ void setMotors(const int motors[4], int encoder) {
     motorRight[0] = motors[2]; // Right, positive
     motorRight[1] = motors[3]; // Right, negative
     // call calcDistance() every time the output of encoder pin changes
-    attachInterrupt(encoder, calcDistance, CHANGE);
+    attachInterrupt(digitalPinToInterrupt(encoder), calcDistance, CHANGE);
 }
 
 void move(int direction, float value, int unit) {
